@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Tilt+Neon&display=swap');
+
+:root {
+   --yellow_color: #f4b940;
+   --black_text: #090808;
+   --black_text_two: #26242f;
+   --black_text_three: #6c6c6c;
+   --background_color_white: #ffffff;
+   --background_color_gray: #313131;
+
+   /* height: 8000px; */
+}
+
+* {
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.2;
+   box-sizing: border-box;
+   /* border: solid; */
+}
+
+.uppercase {
+   text-transform: uppercase;
+}
+
+.capitalize {
+   text-transform: capitalize;
+}
+
+a {
+   color: var(--background_color_gray)!important;
+}
+
+/* text colors styles start */
+.yellow_text {
+   color: var(--yellow_color)!important;
+}
+
+.white_color {
+   color: var(--background_color_white);
+}
+
+.black_text {
+   color: var(--black_text);
+}
+
+.gray_one {
+   color: var(--black_text_two);
+}
+
+.gray_two {
+   color: var(--background_color_gray);
+}
+
+.gray_three {
+   color: var(--black_text_three);
+}
+
+/* text color styles end */
+
+/* text styles start */
+
+h1 {
+   font-size: 6.5rem;
+   text-transform: uppercase;
+   font-weight: 400;
+   margin-top: 5%;
+   margin-bottom: 2%;
+}
+
+h2 {
+   font-size: 2.6rem;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 2px;
+}
+
+h3 {
+   font-size: 1.1rem;
+   font-weight: 400;
+   color: var(--black_text_two);
+}
+
+/* text styles end */
+
+button {
+   width: 160px;
+   height: 50px;
+   color: var(--background_color_white);
+   background-color: var(--yellow_color);
+   border-radius: 5px;
+   border: none;
+   font-size: 1.1rem;
+   text-transform: uppercase;
+}
+
+.button_s {
+   width: 200px;
+   font-size: 1.2rem;
+}
+
+.containers {
+   width: 85%;
+   margin: 0 auto;
+}
+
+
+/* page styles */
+
+main {
+   background-image: url(../images/banner-bg.png);
+   background-size: cover;
+   padding-bottom: 3%;
+}
+
+nav {
+   border: none;
+}
+nav .right,
+nav .left {
+   border: none;
+}
+
+main > div h3 {
+   width: 33%;
+   text-align: center;
+   padding-bottom: 26.3%;
+}
+
+.our_services {
+   padding-bottom: 7%;
+}
+.our_services .top {
+   padding-top: 7%;
+   padding-bottom: 8%;
+}
+
+.our_services .sector button {
+   width: 160px;
+   font-size: 1.1rem;
+}
+
+.about_us {
+   background-color: var(--yellow_color);
+}
+
+.about_us p {
+   padding-top: 8%;
+   padding-bottom: 12%;
+   line-height: 1.8;
+   color: var(--background_color_white);
+   margin-top: 0;
+}
+
+.who_we {
+   background-image: url(../images/bg-1.png);
+   padding-top: 4%;
+   padding-bottom: 1%;
+}
+
+.our_projects {
+   padding-top: 5%;
+}
+
+.our_projects .dd {
+   padding-top: 5%;
+}
+
+.our_projects .ss::after {
+   content: 'modern home design';
+   position: absolute;
+   left: 26%;
+   bottom: 5%;
+   text-transform: uppercase;
+   color: var(--background_color_white);
+   font-size: 1.3rem;
+}
+
+.what_is {
+   padding: 6% 0;
+}
+
+.what_is .dd {
+   padding-top: 5%;
+}
+
+.what_is .wall::after {
+ content: "";
+ background-image: url(../images/quote-icon.png);
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 100px;
+}
+
+.contact_us {
+   background-image: url(../images/contact-bg.png);
+   padding-top: 5%;
+   padding-bottom: 4%;
+}
+
+.contact_us .containers .ss > div {
+   width: 49%;
+}
+
+.contact_us img {
+  width: 100%;
+  height: 85%;
+}
+
+.contact_us button {
+   background-color: #f4b84000;
+   color: var(--black_text_three);
+}
+
+.lets_design {
+   background-color: var(--background_color_gray);
+   color: var(--background_color_white);
+   padding-top: 3%;
+   padding-bottom: 2%;
+}
+
+.lets_design h2 {
+   padding-bottom: 14%;
+   font-size: 2.2rem;
+   text-transform: none;
+}
+
+.lets_design h3 {
+   color: var(--background_color_white);
+   font-size: 1.4rem;
+   text-transform: uppercase;
+   padding-bottom: 8%;
+}
+
+.lets_design p {
+   width: 80%;
+   font-size: 0.9rem;
+   line-height: 1.6;
+}
+
+.lets_design h4 {
+   font-size: 0.9rem;
+   font-weight: 500;
+   text-transform: capitalize;
+   margin-bottom: 2%;
+}
+
+
+
+.lets_design input {
+   color: var(--background_color_white);
+   border: none;
+   border-radius: 0%;
+   width: 30%;
+   margin-left: 55%;
+}
+
+.lets_design button {
+   border: none;
+}
+
+/********************** Other page *********************/
+.main_style {
+   padding-bottom: 0%;
+}
+
+
+@media (max-width:1200px) {
+   .contact_us .containers .ss > div {
+      width: 100%;
+   }
+   .contact_us .containers .ss > div:last-child {
+      margin-top: 5%;
+   }
+   .contact_us button {
+      margin-top: 5%;
+   }
+}
+
+
+@media (max-width:768px) {
+
+   :root {
+      font-size: 10px;
+   }
+
+   h1 {
+      font-size: 5rem;
+   }
+
+   button {
+      width: 150px;
+      height: 40px;
+   }
+
+}
